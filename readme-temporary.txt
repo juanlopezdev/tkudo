@@ -14,12 +14,16 @@ Instalacion
         source .zshrc
     Ejecutar el siguiente comando para las migraciones
         sail artisan migrate
-    Ingresar a 
-        http://localhost
+    Poblar la base de datos
+        sail artisan db:seed
 
 Comandos de ejecucion
     Levantar docker
         sail up -d
+    Ingresar a 
+        http://localhost
+        
     Bajar docker
         sail down
+    
 
