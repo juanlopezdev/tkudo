@@ -31,6 +31,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 // Boards
+Route::get('/boards/{id}/detail', [BoardController::class, 'detail'])->middleware(['auth', 'verified'])->name('boards.detail');
 Route::resource('boards', BoardController::class)->only([
   'create'
 ])->middleware(['auth', 'verified']);

@@ -28,3 +28,7 @@
       hover:bg-green-500;
   }
 }
+
+[type='file']:focus {
+  outline: 0px;
+}

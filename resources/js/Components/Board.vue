@@ -13,13 +13,23 @@
   >
     <div class="md:flex">
       <div class="md:flex-shrink-0 md:w-1/4">
-        <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=448&q=80" alt="A cat"
+        <img
+          class="h-full w-full object-cover"
+          src="https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=448&q=80"
+          alt="A cat"
         />
       </div>
       <div class="md:w-3/4 p-8">
         <div class="flex justify-between">
-          <h3 class="text-xl"><b>{{ board.title }}</b></h3>
-          <tkudo-button> View </tkudo-button>
+          <h3 class="text-xl">
+            <b>{{ board.title }}</b>
+          </h3>
+          <inertia-link
+            :href="route('boards.detail', { id: 1 })"
+            class="btn-primary"
+          >
+            View
+          </inertia-link>
         </div>
         <div class="md:flex md:flex-wrap">
           <div class="md:w-1/2">

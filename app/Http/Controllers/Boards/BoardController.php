@@ -25,7 +25,7 @@ class BoardController extends Controller
    */
   public function create()
   {
-    return Inertia::render('Boards/Create'); 
+    return Inertia::render('Boards/Create');
   }
 
   /**
@@ -82,5 +82,16 @@ class BoardController extends Controller
   public function destroy($id)
   {
     //
+  }
+
+  /**
+   * Show the form for showing the specified resource.
+   *
+   * @param  int  $id
+   * @return \Illuminate\Http\Response
+   */
+  public function detail($id)
+  {
+    return Inertia::render('Boards/Detail');
   }
 }
